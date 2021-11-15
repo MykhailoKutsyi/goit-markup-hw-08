@@ -1,0 +1,35 @@
+$color: blue;
+
+body {
+  background-color: $color;
+}
+
+// utils
+@import "./utils/variables";
+
+//base
+@import "./base/common";
+
+//components
+@import "./components/container";
+@import "./components/modal-form";
+@import "./components/modal";
+@import "./components/section";
+
+//layout
+
+//first page
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/logo";
+@import "./layout/benefits";
+@import "./layout/works";
+@import "./layout/regular-customers";
+@import "./layout/socials";
+@import "./layout/team-section";
+@import "./layout/footer";
+
+//Portfolio
+@import "./layout/portfolio-filter-buttons";
+@import "./layout/portfolio-card-set";
+@import "./layout/portfolio-card-set-overlay";
