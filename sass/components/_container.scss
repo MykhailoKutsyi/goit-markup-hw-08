@@ -1,7 +1,32 @@
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  background-color: teal;
+  outline: 1px solid tomato;
+
+  // min-height: 100vh;
+
+  // @media screen and (min-width: 320px) {
+  //   width: 320px;
+  //   background-color: rgb(41, 236, 34);
+  // }
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    background-color: rgb(55, 0, 128);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    background-color: rgb(211, 34, 143);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    background-color: tomato;
+  }
 }
