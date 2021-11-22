@@ -1,16 +1,37 @@
 /* Footer */
 
 .footer {
-  display: flex;
   background-color: var(--hero-footer-background);
   padding: 60px 0;
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .footer__container {
-  display: flex;
-  align-items: baseline;
-  &--position {
-    flex-grow: 1;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    align-items: baseline;
+    &--position {
+      flex-grow: 1;
+    }
+  }
+}
+
+.footer__container--position {
+  // display: block;
+  // margin-left: auto;
+  // margin-right: auto;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 61px;
   }
 }
 
@@ -22,17 +43,30 @@
 
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   text-decoration: none;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .footer-logo--accent {
   color: var(--accent-color);
 }
 
-.contacts__item:not(:last-child) {
-  margin-bottom: 9px;
+.contacts__item {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .contacts__address {
@@ -47,10 +81,23 @@
   font-weight: 400;
   text-decoration: none;
   font-style: normal;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .footer-socials {
-  margin-left: 70px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 767px) {
+    margin-top: 5px;
+    margin-right: 89px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
 }
 
 .footer-socials__title {
@@ -61,6 +108,10 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--primary-white-color);
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .socials__link--footer {
@@ -71,8 +122,6 @@
 /* «C1» Выполнено оформление элементов формы подписки на рассылку в футере. */
 
 .footer-form {
-  margin-left: 93px;
-
   &__title {
     margin-bottom: 20px;
 
@@ -83,17 +132,29 @@
 
     color: #ffffff;
   }
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 
 .footer-form__field {
-  display: flex;
+  // min-width: 450px;
+  // min-height: 156px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .footer-form__email {
+  margin-bottom: 20px;
   padding: 15px 16px;
-
-  min-width: 358px;
-  min-height: 50px;
 
   color: #ffffff;
 
@@ -101,6 +162,14 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background: #2f303a;
+
+  @media screen and (min-width: 480px) {
+    min-width: 450px;
+    min-height: 50px;
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 358px;
+  }
 }
 
 .footer-form__button {
@@ -126,6 +195,10 @@
   &:focus,
   &:hover {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+  @media screen and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

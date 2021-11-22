@@ -52,7 +52,7 @@
                     </svg>
                 </button>
 
-                <ul>
+                <ul class="mobile-menu__list">
                     <li class="mobile-menu__item">
                         <a href="./index.html" class="mobile-menu__link mobile-menu__link--current">Студия
                         </a>
@@ -65,41 +65,42 @@
                         <a href="#" class="mobile-menu__link">Контакты</a>
                     </li>
                 </ul>
-                <ul class="mobile-menu__contacts">
-                    <li class="mobile-menu__item">
-                        <a href="tel:+380961111111" class="mobile-menu__link--phone">
-                            +38 096 111 11 11</a>
-                    </li>
-                    <li class="mobile-menu__item">
-                        <a href="mailto:info@devstudio.com" class="mobile-menu__link--emeil">
-                            info@devstudio.com
-                        </a>
-                    </li>
-                </ul>
-                
-                <ul class="mobile-socials">
-                    <li class="mobile-socials__item">
-                        <a href="" class="mobile-socials__link">
-                            Instagram
-                        </a>
-                    </li>
-                    <li class="mobile-socials__item">
-                        <a href="" class="mobile-socials__link">
-                            Twitter
-                        </a>
-                    </li>
-                    <li class="mobile-socials__item">
-                        <a href="" class="mobile-socials__link">
-                            Facebook
-                        </a>
-                    </li>
-                    <li class="mobile-socials__item">
-                        <a href="" class="mobile-socials__link">
-                            LinkedIn
-                        </a>
-                    </li>
-                </ul>
-
+                <div>
+                    <ul class="mobile-menu__contacts">
+                        <li class="mobile-menu__item">
+                            <a href="tel:+380961111111" class="mobile-menu__link--phone">
+                                +38 096 111 11 11</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="mailto:info@devstudio.com" class="mobile-menu__link--emeil">
+                                info@devstudio.com
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    <ul class="mobile-socials">
+                        <li class="mobile-socials__item">
+                            <a href="" class="mobile-socials__link">
+                                Instagram
+                            </a>
+                        </li>
+                        <li class="mobile-socials__item">
+                            <a href="" class="mobile-socials__link">
+                                Twitter
+                            </a>
+                        </li>
+                        <li class="mobile-socials__item">
+                            <a href="" class="mobile-socials__link">
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="mobile-socials__item">
+                            <a href="" class="mobile-socials__link">
+                                LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
 
@@ -208,12 +209,39 @@
         </section>
 
         <!-- Наша команда -->
-        <!-- <section class="section section--background">
+        <section class="section section--background">
                 <div class="container">
                     <h2 class="section__title">Наша команда</h2>
                     <ul class="teammate">
                         <li class="teammate__item">
-                            <img src="./images/ihor.jpg" alt="Product Designer" width="270"/>
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="
+                                    ./images/team/team-1-desktop.webp 1x,
+                                    ./images/team/team-1-desktop@2x.webp 2x
+                                                " type="image/webp" />
+                                <source media="(min-width: 1200px)" srcset="
+                                    ./images/team/team-1-desktop.jpg    1x,
+                                    ./images/team/team-1-desktop@2x.jpg 2x
+                                                " />
+                                <source media="(min-width: 768px)" srcset="
+                                    ./images/team/team-1-tablet.webp    1x,
+                                    ./images/team/team-1-tablet@2x.webp 2x
+                                                " type="image/webp" />
+                                <source media="(min-width: 768px)" srcset="
+                                    ./images/team/team-1-tablet.jpg    1x,
+                                    ./images/team/team-1-tablet@2x.jpg 2x
+                                                " />
+                                <source media="(max-width: 767px)" srcset="
+                                    ./images/team/team-1.webp 1x,
+                                    ./images/team/team-1@2x.webp 2x
+                                                " type="image/webp" />
+                                <source media="(max-width: 767px)" srcset="
+                                    ./images/team/team-1.jpg 1x,
+                                    ./images/team/team-1@2x.jpg 2x
+                                                " />
+                                <img src="#" alt="Product Designer" />
+                            </picture>
+                            <!-- <img src="./images/ihor.jpg" alt="Product Designer" /> -->
                             <div class="teammate__content">
                                 <h3 class="teammate__title">Игорь Демьяненко</h3>
                                 <p class="teammate__position">
@@ -252,7 +280,34 @@
                             </div>
                         </li>
                         <li class="teammate__item">
-                            <img src="./images/olha.jpg" alt="Frontend Developer" width="270"/>
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="
+                                    ./images/team/team-2-desktop.webp 1x,
+                                    ./images/team/team-2-desktop@2x.webp 2x
+                                            " type="image/webp" />
+                                <source media="(min-width: 1200px)" srcset="
+                                    ./images/team/team-2-desktop.jpg    1x,
+                                    ./images/team/team-2-desktop@2x.jpg 2x
+                                                                            " />
+                                <source media="(min-width: 768px)" srcset="
+                                    ./images/team/team-2-tablet.webp    1x,
+                                    ./images/team/team-2-tablet@2x.webp 2x
+                                            " type="image/webp" />
+                                <source media="(min-width: 768px)" srcset="
+                                    ./images/team/team-2-tablet.jpg    1x,
+                                    ./images/team/team-2-tablet@2x.jpg 2x
+                                                                            " />
+                                <source media="(max-width: 767px)" srcset="
+                                    ./images/team/team-2.webp 1x,
+                                    ./images/team/team-2@2x.webp 2x
+                                            " type="image/webp" />
+                                <source media="(max-width: 767px)" srcset="
+                                    ./images/team/team-2.jpg 1x,
+                                    ./images/team/team-2@2x.jpg 2x
+                                                                            " />
+                                <img src="#" alt="Frontend Developer" />
+                            </picture>
+                            <!-- <img src="./images/olha.jpg" alt="Frontend Developer"/> -->
                             <div class="teammate__content">
                                 <h3 class="teammate__title">Ольга Репина</h3>
                                 <p class="teammate__position">
@@ -291,7 +346,34 @@
                             </div>
                         </li>
                         <li class="teammate__item">
-                            <img src="./images/nylolay.jpg" alt="Marketing" width="270"/>
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="
+                                    ./images/team/team-3-desktop.webp 1x,
+                                    ./images/team/team-3-desktop@2x.webp 2x
+                                        " type="image/webp" />
+                                <source media="(min-width: 1200px)" srcset="
+                                    ./images/team/team-3-desktop.jpg    1x,
+                                    ./images/team/team-3-desktop@2x.jpg 2x
+                                                                        " />
+                                <source media="(min-width: 768px)" srcset="
+                                    ./images/team/team-3-tablet.webp    1x,
+                                    ./images/team/team-3-tablet@2x.webp 2x
+                                        " type="image/webp" />
+                                <source media="(min-width: 768px)" srcset="
+                                    ./images/team/team-3-tablet.jpg    1x,
+                                    ./images/team/team-3-tablet@2x.jpg 2x
+                                                                        " />
+                                <source media="(max-width: 767px)" srcset="
+                                    ./images/team/team-3.webp 1x,
+                                    ./images/team/team-3@2x.webp 2x
+                                        " type="image/webp" />
+                                <source media="(max-width: 767px)" srcset="
+                                    ./images/team/team-3.jpg 1x,
+                                    ./images/team/team-3@2x.jpg 2x
+                                                                        " />
+                                <img src="#" alt="Marketing" />
+                            </picture>
+                            <!-- <img src="./images/nylolay.jpg" alt="Marketing"/> -->
                             <div class="teammate__content">
                                 <h3 class="teammate__title">Николай Тарасов</h3>
                                 <p class="teammate__position">
@@ -330,7 +412,34 @@
                             </div>
                         </li>
                         <li class="teammate__item">
-                            <img class="img" src="./images/mykhailo.jpg" alt="UI Designer" width="270"/>
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="
+                                    ./images/team/team-4-desktop.webp 1x,
+                                    ./images/team/team-4-desktop@2x.webp 2x
+                                        " type="image/webp" />
+                                <source media="(min-width: 1200px)" srcset="
+                                    ./images/team/team-4-desktop.jpg    1x,
+                                    ./images/team/team-4-desktop@2x.jpg 2x
+                                                                          " />
+                                <source media="(min-width: 768px)" srcset="
+                                    ./images/team/team-4-tablet.webp    1x,
+                                    ./images/team/team-4-tablet@2x.webp 2x
+                                        " type="image/webp" />
+                                <source media="(min-width: 768px)" srcset="
+                                    ./images/team/team-4-tablet.jpg    1x,
+                                    ./images/team/team-4-tablet@2x.jpg 2x
+                                                                          " />
+                                <source media="(max-width: 767px)" srcset="
+                                    ./images/team/team-4.webp 1x,
+                                    ./images/team/team-4@2x.webp 2x
+                                        " type="image/webp" />
+                                <source media="(max-width: 767px)" srcset="
+                                    ./images/team/team-4.jpg 1x,
+                                    ./images/team/team-4@2x.jpg 2x
+                                                                          " />
+                                <img src="#" alt="UI Designer" />
+                            </picture>
+                            <!-- <img class="img" src="./images/mykhailo.jpg" alt="UI Designer"/> -->
                             <div class="teammate__content">
                                 <h3 class="teammate__title">Михаил Ермаков</h3>
                                 <p class="teammate__position">
@@ -370,10 +479,10 @@
                         </li>
                     </ul>
                 </div>
-        </section> -->
+        </section>
 
         <!-- Regular customers -->
-        <!-- <section class="section">
+        <section class="section">
             <div class="container">
                 <h2 class="section__title">Постоянные клиенты</h2>
                 <ul class="customers">
@@ -421,17 +530,19 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
     </main>
 
     <!-- Футер -->
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container footer__container">
             <div class="footer__container--position">
                 <a href="./index.html" class="footer-logo"><span class="footer-logo--accent">Web</span>Studio</a>
                 <address>
                     <ul class="contacts">
-                        <li class="contacts__item"><a href="https://goo.gl/maps/6iYoXaCGqueHrKsz9" target="_blank" rel="noreferrer noopener"                        class="contacts__address">г. Киев, пр-т Леси Украинки, 26</a></li>
+                        <li class="contacts__item">
+                            <a href="https://goo.gl/maps/6iYoXaCGqueHrKsz9" target="_blank" rel="noreferrer noopener" class="contacts__address">г. Киев, пр-т Леси Украинки, 26</a>
+                        </li>
                         <li class="contacts__item"><a href="mailto:info@devstudio.com" class="contacts__info">info@devstudio.com</a></li>
                         <li class="contacts__item"><a href="tel:+380961111111" class="contacts__info">+38 096 111 11 11</a></li>
                     </ul>
@@ -476,7 +587,7 @@
                 <div class="footer-form__field">
                     <label for="mail-submit"></label>
                     <input class="footer-form__email" type="email" name="mail-submit" id="mail-submit" placeholder="E-mail"/>
-                    <button class="footer-form__button"     type="submit">Подписаться
+                    <button class="footer-form__button" type="submit">Подписаться
                         <svg class="footer-form__button--margin" width="24px" height="24px">
                             <use href="./images/icon.svg#icon-send"></use>
                         </svg>
@@ -484,7 +595,7 @@
                 </div>
             </form>
         </div>
-    </footer> -->
+    </footer>
 
     <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">

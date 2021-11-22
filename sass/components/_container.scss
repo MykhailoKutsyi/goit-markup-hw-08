@@ -14,7 +14,9 @@
   //   width: 320px;
   //   background-color: rgb(41, 236, 34);
   // }
-
+  // @media screen and (min-width: 320px) {
+  //   min-width: 320px;
+  // }
   @media screen and (min-width: 480px) {
     width: 480px;
   }
