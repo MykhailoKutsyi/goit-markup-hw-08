@@ -37,7 +37,7 @@
   @media screen and (min-width: 768px) {
     // margin-top: 81px;
 
-    background-image: url(../../images/hero/hero-tablet.jpg);
+    background-image: url("../../images/hero/hero-tablet.jpg");
     max-width: 768px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -49,7 +49,7 @@
   @media screen and (min-width: 1200px) {
     // padding-top: 200px;
     // padding-bottom: 200px;
-    background-image: url(../../images/hero/hero-desktop.jpg);
+    background-image: url("../../images/hero/hero-desktop.jpg");
     max-width: 1600px;
     height: 600px;
     @media (min-device-pixel-ratio: 2),
