@@ -1,4 +1,5 @@
 .teammate {
+  width: 100%;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -9,9 +10,12 @@
 }
 
 .teammate__item {
-  @media screen and (max-width: 768px) {
-    width: 450px;
+  // width: 100%;
 
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
