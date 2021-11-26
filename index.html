@@ -121,7 +121,7 @@
 
     <main>
         <!-- Заказать услугу -->
-        <section class="section hero">
+        <section class="hero">
                 <h1 class="hero__title">Эффективные решения<br>для вашего бизнеса</h1>
                 <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
         </section>
@@ -187,19 +187,49 @@
                     <h2 class="section__title">Чем мы занимаемся</h2>
                     <ul class="works">
                         <li class="works__item">
-                            <img src="./images/tablet.jpg" alt="Tablet and keyboard" width="370" height="294" />
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="
+                                    ./images/occupation/occ-1-desktop.webp 1x,
+                                    ./images/occupation/occ-1-desktop@2x.webp 2x
+                                                " type="image/webp" />
+                                <source media="(min-width: 1200px)" srcset="
+                                    ./images/occupation/occ-1-desktop.jpg    1x,
+                                    ./images/occupation/occ-1-desktop@2x.jpg 2x
+                                                " />
+                                <img src="#" alt="Tablet and keyboard" />
+                            </picture>
                             <div class="works__label">
                                 <h3 class="works__title">Десктопные приложения</h3>
                             </div>
                         </li>
                         <li class="works__item">
-                            <img src="./images/iphone.jpg" alt="Iphone and laptop" width="370" height="294" />
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="
+                                    ./images/occupation/occ-2-desktop.webp 1x,
+                                    ./images/occupation/occ-2-desktop@2x.webp 2x
+                                                " type="image/webp" />
+                                <source media="(min-width: 1200px)" srcset="
+                                    ./images/occupation/occ-2-desktop.jpg    1x,
+                                    ./images/occupation/occ-2-desktop@2x.jpg 2x
+                                                " />
+                                <img src="#" alt="Iphone and laptop" />
+                            </picture>
                             <div class="works__label">
                                 <h3 class="works__title">Мобильные приложения</h3>
                             </div>
                         </li>
                         <li class="works__item">
-                            <img src="./images/ipad.jpg" alt="Ipad and pensil" width="370" height="294" />
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="
+                                    ./images/occupation/occ-3-desktop.webp 1x,
+                                    ./images/occupation/occ-3-desktop@2x.webp 2x
+                                                " type="image/webp" />
+                                <source media="(min-width: 1200px)" srcset="
+                                    ./images/occupation/occ-3-desktop.jpg    1x,
+                                    ./images/occupation/occ-3-desktop@2x.jpg 2x
+                                                " />
+                                <img src="#" alt="Ipad and pensil" />
+                            </picture>
                             <div class="works__label">
                                 <h3 class="works__title">Дизайнерские решения</h3>
                             </div>
@@ -581,7 +611,7 @@
                     </li>
                 </ul>
             </div>
-
+            <div>   
             <form class="footer-form">
                 <h2 class="footer-form__title">Подпишитесь на рассылку</h2>
                 <div class="footer-form__field">
@@ -594,6 +624,7 @@
                     </button>
                 </div>
             </form>
+            </div>
         </div>
     </footer>
 
